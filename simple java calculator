@@ -1,0 +1,44 @@
+/*Import Scanner*/
+import java.util.Scanner;
+
+public class Calculator{
+
+	
+	public static void main(String args[]){
+	
+		/*Scanner*/
+		Scanner sc = new Scanner(System.in);
+		System.out.print("Type your first number in: ");
+		int firstNumber = sc.nextInt();
+		System.out.print("Type your second number in: ");
+		int secondNumber = sc.nextInt();
+		char symbol;
+		System.out.println("Type either +, -, * or / in your console: ");
+		symbol = sc.next().charAt(0);
+		
+		
+		
+		/*Datentypen*/
+		int plus = firstNumber + secondNumber;
+		int minus = firstNumber - secondNumber;
+		int mal = firstNumber * secondNumber;
+		int geteilt = firstNumber / secondNumber; 
+		char plusErgebnis = '+';
+		char minusErgebnis = '-';
+		char malErgebnis = '*';
+		char geteiltErgebnis = '/';
+		
+		/*function*/
+		if(symbol == plusErgebnis){
+		System.out.println(firstNumber + ("+") + secondNumber + ("=") + plus);}
+		if(symbol == minusErgebnis){
+		System.out.println(firstNumber + ("-") + secondNumber + ("=") + minus);}
+		if(symbol == malErgebnis){
+		System.out.println(firstNumber + ("*") + secondNumber + ("=") + mal);}
+		if(symbol == geteiltErgebnis){
+		System.out.println(firstNumber + ("/") + secondNumber + ("=") + geteilt);}
+		
+		/**/
+		System.out.println("\nexit");
+	}
+}
